@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeGrid '26 — Hackathon Registration</title>
+<meta name="description" content="Register for CodeGrid '26, a 24-hour build sprint.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+<header>
+  <nav>
+    <div class="logo">Code<span>Grid</span>'26</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#prizes">Prizes</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+      <a href="#register" class="btn">Register</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <canvas id="particles"></canvas>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">24-hour build sprint · offline @ campus</div>
+      <h1>Ship something<br>that <span class="accent">didn't exist</span><br>yesterday.</h1>
+      <p class="lead">CodeGrid '26 brings 300 builders together for one night of shipping. Pick a track, form a crew of up to four, and walk out with something real.</p>
+      <div class="hero-ctas">
+        <a href="#register" class="btn">Register your team</a>
+        <a href="#schedule" class="btn btn-ghost">View schedule</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>300+</strong><span>Builders</span></div>
+        <div><strong>₹3L</strong><span>Prize pool</span></div>
+        <div><strong>24 hrs</strong><span>Non-stop</span></div>
+      </div>
+    </div>
+    <div class="terminal">
+      <div class="terminal-bar"><span></span><span></span><span></span><b>countdown.sh</b></div>
+      <div class="terminal-body">
+        <div class="line"><span class="prompt">$</span> time_until --event="CodeGrid '26"</div>
+        <div class="countdown" id="countdown">
+          <div><b id="cd-days">00</b><span>Days</span></div>
+          <div><b id="cd-hours">00</b><span>Hours</span></div>
+          <div><b id="cd-mins">00</b><span>Mins</span></div>
+          <div><b id="cd-secs">00</b><span>Secs</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">About</div>
+      <h2>Three tracks. One night. Zero fluff.</h2>
+      <p>No pitch decks, no jury interrogations at hour two. Just a working build by sunrise.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <div class="icon"></div>
+        <div class="num">01</div>
+        <h3>Open Track</h3>
+        <p>Build anything — web, mobile, hardware, or a script that solves a problem you actually have.</p>
+      </div>
+      <div class="about-card reveal">
+        <div class="icon"></div>
+        <div class="num">02</div>
+        <h3>AI/ML Track</h3>
+        <p>Models, agents, or applied ML tooling. Bring a dataset or use one of ours.</p>
+      </div>
+      <div class="about-card reveal">
+        <div class="icon"></div>
+        <div class="num">03</div>
+        <h3>Campus Impact Track</h3>
+        <p>Solve a real problem on your own campus — attendance, mess menus, lost & found, timetable clashes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stats" style="padding: 70px 0; background: var(--bg-alt);">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-card reveal"><b data-count="300" data-suffix="+">0</b><span>Participants</span></div>
+      <div class="stat-card reveal"><b data-count="50" data-suffix="+">0</b><span>Mentors</span></div>
+      <div class="stat-card reveal"><b data-count="3" data-prefix="₹" data-suffix="L">0</b><span>Prize Pool</span></div>
+      <div class="stat-card reveal"><b data-count="24" data-suffix=" Hrs">0</b><span>Non-stop</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Gallery</div>
+      <h2>From last year</h2>
+      <p>A few moments from CodeGrid '25 </p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal"><img src="OIP (5).jpg" alt="Team huddled around laptops during the hack"><div class="cap">Hour 6 — deep in the build</div></div>
+      <div class="gallery-item reveal"><img src="OIP (4).jpg" alt="Mentor helping a team debug at their table"><div class="cap">team round</div></div>
+      <div class="gallery-item reveal"><img src="OIP (3).jpg" alt="Full hall of participants at opening ceremony"><div class="cap">round indivisuals</div></div>
+      <div class="gallery-item reveal"><img src="OIP (1).jpg" alt="Team celebrating after a successful demo"><div class="cap">Grand winners</div></div>
+      <div class="gallery-item reveal"><img src="OIP (2).jpg" alt="Late night coding with snacks on the table"><div class="cap">Meetings</div></div>
+      <div class="gallery-item reveal"><img src="OIP.jpg" alt="Winning team receiving their prize on stage"><div class="cap">Decisions-> CodeGrid '25</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule" style="background: var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Schedule</div>
+      <h2>How the 24 hours run</h2>
+      <p>Scroll through — the trace lights up as each checkpoint comes into view.</p>
+    </div>
+    <div class="timeline" id="timeline">
+      <div class="t-item reveal"><div class="t-node"></div><div class="t-time">Day 1 · 09:00</div><h3>Check-in & team formation</h3><p>Badge pickup, swag, and last-minute team matchmaking for solo hackers.</p></div>
+      <div class="t-item reveal"><div class="t-node"></div><div class="t-time">Day 1 · 10:30</div><h3>Opening ceremony & track briefing</h3><p>Problem statements drop, rules explained, mentors introduced.</p></div>
+      <div class="t-item reveal"><div class="t-node"></div><div class="t-time">Day 1 · 12:00</div><h3>Hacking begins</h3><p>The 24-hour clock starts. Mentor booths open on rotation.</p></div>
+      <div class="t-item reveal"><div class="t-node"></div><div class="t-time">Day 1 · 21:00</div><h3>Midnight snack + mini-games</h3><p>A break to refuel, plus a lightning round with small prizes.</p></div>
+      <div class="t-item reveal"><div class="t-node"></div><div class="t-time">Day 2 · 09:00</div><h3>Hacking ends → submissions lock</h3><p>Code freeze. Submit your repo and a 3-minute demo video.</p></div>
+      <div class="t-item reveal"><div class="t-node"></div><div class="t-time">Day 2 · 11:00</div><h3>Judging & closing ceremony</h3><p>Live demos to judges, followed by results and prize distribution.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="prizes">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Prizes</div>
+      <h2>What's on the table</h2>
+      <p>Across all tracks, judged on execution, originality, and real-world usefulness.</p>
+    </div>
+    <div class="prize-grid">
+      <div class="prize-card reveal"><div class="prize-rank">Runner-up</div><div class="prize-amount">₹75,000</div><p>+ mentorship credits & swag</p></div>
+      <div class="prize-card gold reveal"><div class="prize-rank">Grand Winner</div><div class="prize-amount">₹1,50,000</div><p>+ incubation interview & swag</p></div>
+      <div class="prize-card reveal"><div class="prize-rank">Best Freshman Team</div><div class="prize-amount">₹50,000</div><p>+ mentorship credits & swag</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sponsors" style="background: var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Sponsors</div>
+      <h2>Backed by</h2>
+      <p>Interested in sponsoring next year?Reach out now..</p>
+    </div>
+    <div class="sponsor-row reveal">
+      <div class="sponsor-chip"><span class="mark">☁</span> NEXORA CLOUD</div>
+      <div class="sponsor-chip"><span class="mark">▣</span> BYTEWORKS</div>
+      <div class="sponsor-chip"><span class="mark">◈</span> PIXELHAUS</div>
+      <div class="sponsor-chip"><span class="mark">◫</span> GRIDLINE DEVS</div>
+      <div class="sponsor-chip"><span class="mark">⬡</span> STACKFORGE</div>
+    </div>
+    <p class="sponsor-note"></p>
+  </div>
+</section>
+
+<section id="register">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin: 0 auto 50px; text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">Registration</div>
+      <h2>Reserve your team's spot</h2>
+      <p style="margin: 0 auto;">Teams of 1–4. One member registers on behalf of the crew.</p>
+    </div>
+
+    <form class="form-wrap reveal" id="regForm" novalidate>
+      <div id="formFields">
+        <div class="field" id="f-name">
+          <label for="name">Team name</label>
+          <input type="text" id="name" placeholder="e.g. Null Pointers">
+          <div class="err">Team name is required.</div>
+        </div>
+
+        <div class="row-2">
+          <div class="field" id="f-lead">
+            <label for="lead">Team lead's full name</label>
+            <input type="text" id="lead" placeholder="Your name">
+            <div class="err">Please enter the team lead's name.</div>
+          </div>
+          <div class="field" id="f-size">
+            <label for="size">Team size</label>
+            <select id="size">
+              <option value="">Select</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+            </select>
+            <div class="err">Select your team size.</div>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="field" id="f-email">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@college.edu">
+            <div class="err">Enter a valid email address.</div>
+          </div>
+          <div class="field" id="f-phone">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="10-digit mobile number">
+            <div class="err">Enter a valid 10-digit phone number.</div>
+          </div>
+        </div>
+
+        <div class="field" id="f-track">
+          <label for="track">Track</label>
+          <select id="track">
+            <option value="">Select a track</option>
+            <option>Open Track</option>
+            <option>AI/ML Track</option>
+            <option>Campus Impact Track</option>
+          </select>
+          <div class="err">Please pick a track.</div>
+        </div>
+
+        <div class="field" id="f-idea">
+          <label for="idea">One-line idea (optional)</label>
+          <textarea id="idea" placeholder="What are you thinking of building?"></textarea>
+        </div>
+
+        <button type="submit" class="btn submit-btn">Submit registration</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="modal-overlay" id="successModal">
+  <div class="modal-card">
+    <div class="emoji">🎉</div>
+    <h3>Registration Successful!</h3>
+    <p>A confirmation email has been sent.<br>See you at CodeGrid '26.</p>
+    <button class="btn" id="modalClose">Close</button>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="logo">Code<span>Grid</span>'26</div>
+      <div class="footer-social">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="mailto:hello@codegrid.dev" aria-label="Email">@</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 CodeGrid. 
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
