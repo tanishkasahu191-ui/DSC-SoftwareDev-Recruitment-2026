@@ -2,8 +2,8 @@
 
 A responsive, single-page website created for the **Software Development Team Recruitment Task (Task 2)** of the Data Science Club. The project is a frontend-only registration website for a fictional 24-hour hackathon called **CodeGrid '26**.
 
-**Live Demo:** _Add your Vercel/Netlify link here_  
-**GitHub Repository:** _Add your GitHub repository link here_
+**Live Demo:** https://stupendous-syrniki-4a0de4.netlify.app/ 
+
 
 ---
 
@@ -100,7 +100,7 @@ http://localhost:8000
 
 The website can be deployed easily using **Netlify** or **Vercel**.
 
-Simply connect your GitHub repository or upload the project folder to deploy the site.
+
 
 ---
 
@@ -128,4 +128,5 @@ Some features that can be added in the future include:
 
 ## Author
 
-Developed as part of the **Software Development Team Recruitment Task** for the **Data Science Club (2026–27)**.
+-Tanishka Sahu
+-25BCE10056
